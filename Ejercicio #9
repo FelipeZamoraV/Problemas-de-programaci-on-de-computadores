@@ -1,0 +1,27 @@
+#definicion matematica en latex
+<h2>Ejercicio #9 Determinar Multiplo<h2>
+La siguiente funcion calcula si un numero es multiplo de la suma de otros 2 numeros($m$):
+
+\begin{equation*}
+  \begin{array}{crll}
+    \text{det_Multiplo: } & \mathbb{Z} \times \mathbb{Z}\times \mathbb{Z} & \longrightarrow &  \mathbb{B}  \\
+      & (n,x,y) & \longmapsto & \forall_{2}^{\sqrt n}(x+y)*i \neq 0
+  \end{array}
+\end{equation*}
+
+#Programa en phyton
+def det_Multiplo(n,x,y):
+  s = False
+  for k in range (2,int(n**0.5)+1):
+    s = s or (((x+y)*k)==n)
+    return s
+
+n=int(input("digite el numero que quiere comprobar si es multiplo de x+y "))
+x=int(input("digite el numero x "))
+y=int(input("digite el numero y "))
+
+
+
+r = det_Multiplo(n,x,y)
+
+print('el numero ', n, r,'es multiplo de la suma de ', x, 'y ', y)
