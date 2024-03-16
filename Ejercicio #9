@@ -14,7 +14,7 @@ La siguiente funcion calcula si un numero es multiplo de la suma de otros 2 nume
 #Programa en phyton
 
 def det_Multiplo(n,x,y):
-  if n%(x+y)==0:
+  if (x+y)%n==0:
     return 'si'
   return 'no'
 
