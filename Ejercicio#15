@@ -3,7 +3,7 @@
 
 \begin{equation*}
   \begin{array}{crll}
-    \text{edad: } & \mathbb{R}\times\mathbb{R}\times\mathbb{R}\times\mathbb{R}\ & \longrightarrow & \mathbb{R}\times\mathbb{R}  \\
+    \text{Puntos de interseccion: } & \mathbb{R}\times\mathbb{R}\times\mathbb{R}\times\mathbb{R}\ & \longrightarrow & \mathbb{R}\times\mathbb{R}  \\
       & (m_1,m_2,b_1,b_2) & \longmapsto (\frac{b_2+b_1}{m_1-m_2},\frac{m_1(b_2+b_1)}{m_1-m_2}+b_1)
   \end{array}
 \end{equation*}
