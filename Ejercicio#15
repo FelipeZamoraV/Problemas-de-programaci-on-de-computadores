@@ -1,0 +1,29 @@
+#Definicion en latex
+<h2>Ejercicio #15 Puntos de interseccion al origen <h2>
+
+\begin{equation*}
+  \begin{array}{crll}
+    \text{edad: } & \mathbb{R}\times\mathbb{R}\times\mathbb{R}\times\mathbb{R}\ & \longrightarrow & \mathbb{R}\times\mathbb{R}  \\
+      & (m_1,m_2,b_1,b_2) & \longmapsto (\frac{b_2+b_1}{m_1-m_2},\frac{m_1(b_2+b_1)}{m_1-m_2}+b_1)
+  \end{array}
+\end{equation*}
+
+#Definicion en phyton
+
+def puntos_interseccion(m,a,n,b):
+  if m != n:
+    x = (b-a)/(m-n)
+    y = ((m*x)+a)
+    return (x , y)
+  return "ninguno"
+
+m = float(input('Digite la pendiente de la primera recta'))
+n = float(input('Digite la pendiente de la segunda recta'))
+a = float(input('Digite el punto de corte de la primera recta'))
+b = float(input('Digite el punto de corte de la primera recta'))
+
+z = puntos_interseccion(m,a,n,b)
+
+print('el punto de corte entre las 2 rectas indicadas ', z)
+
+
